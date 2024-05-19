@@ -1,0 +1,68 @@
+/* --- overall --- */
+body {
+    font-family: 'Calibri';
+    background-color: whitesmoke;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.container {
+    background: white;
+    margin-top: 25px;
+    padding: 5px 100px 25px 100px;
+    box-shadow: 0 5px 15px 0 lightgray;
+    text-align: center;
+}
+
+.result {
+    text-align: center;
+}
+
+.score {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    font-size: 12px;
+    padding: 15px;
+}
+
+/* --- images --- */
+img {
+    width: 75px;
+    border: 2px solid transparent;
+    opacity: 0.5;
+}
+
+img:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+img.selected {
+    border: 2px solid lightgray;
+    opacity: 1;
+}
+
+.computer img {
+    width: 100px;
+    opacity: 1;
+}
+
+.tie {
+    border: 2px solid gold;
+}
+
+.win {
+    border: 2px solid green;
+}
+
+.lose {
+    border: 2px solid red;
+}

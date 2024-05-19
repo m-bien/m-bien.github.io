@@ -1,0 +1,69 @@
+/* --- overall styles --- */
+body {
+    font-family: 'Verdana';
+    text-align: center;
+    background-color: #2b3137;
+    margin: 0;
+}
+
+section {
+    padding: 20px;
+}
+
+input {
+    margin-top: 25px;
+    font-family: 'Verdana';
+    padding: 9px;
+    border: none;
+    border-bottom: 1.5px solid #2b3137;
+}
+
+input:focus {
+    border-bottom: 1.5px solid blue;
+    outline: none;
+}
+
+button {
+    background-color: white;
+    padding: 8px 14px;
+    font-weight: bold;
+    border: none;
+    border-bottom: 1.5px solid #2b3137;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2b3137;
+    color: white;
+    border: 1.5px solid #2b3137;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 10px;
+    background-color: white;
+    border-top: 1.5px solid #2b3137;
+    text-align: center;
+}
+
+/* --- gallery --- */
+.repoGallery {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: space-between;
+	justify-content: center;
+	margin: 0 auto;
+}
+
+.box {
+    text-align: left;
+    font-size: 12px;
+    height: 220px;
+    width: 250px;
+    padding: 20px;
+    margin: 10px 10px 20px 10px;
+    line-height: 18px;
+    background-color: white;
+}

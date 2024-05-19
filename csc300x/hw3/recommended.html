@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>mrgood | Places To Eat</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="style.js" defer></script>
+    <link href='https://fonts.googleapis.com/css2?family=Poppins:wght@700' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css2?family=Poppins:wght@500' rel='stylesheet'>
+    <link rel="icon" href="assets\spartan-favicon.png">
+</head>
+
+<body>
+    <!--- header -->
+    <header>
+        <div class="header">
+            <a href="index.html"><img id="logo" src="assets/logo-spartan-dining-white.png" alt="Spartan Dining Logo"></a>
+            <hr>
+            <h2><a href="index.html">DINE ON CAMPUS</a></h2>
+        </div>
+    </header>
+
+    <!--- splash section + navbar -->
+    <nav>
+        <div id="splash" style="background-image: url('assets/visionbuildersusa-DSC_5246-HDR.jpg');">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="recommended.html">PLACES TO EAT</a></li>
+                <li><a href="mealplans.html">ORDER</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--- main section -->
+    <main>
+        <section class="container">
+            <div class="column left">
+                <h2>RECOMMENDED FOOD</h2>
+                <hr class="yellow">
+                <p>Click on each image to learn more</p>
+
+                <!--- image galleries -->
+                <h2>FOUNTAIN VIEW</h2>
+                <p class="small">Image credit: Spartan Dining</p><br>
+                <img class="expand" onclick="show('text1')" src="assets/spartandining-brunch.jpg" alt="Spartan Dining Brunch">
+                <img class="default" onclick="show('text2')" src="assets/spartandining-stirfry-crop.jpg" alt="Spartan Dining Stir Fry">
+                <img class="default" onclick="show('text3')" src="assets/spartandining-pie-crop.jpg" alt="Spartan Dining Dessert">
+
+                <p class="description" id="text1">
+                    <b>Caf Brunch - $2,832,901,421.00</b><br>
+                    Spartan Dining: All You Can Eat. Customize your brunch with any of your favorite breakfast items.
+                    Try a tasty pork chorizo potato and egg taco, paired with some sausage and a fruit bowl. I have never
+                    seen strawberries or blueberries served at the dining hall before and the sausage is doo doo.
+                </p>
+                <p class="description" id="text2">
+                    <b>Caf Mongolian - $4,413,795,391.00</b><br>
+                    Spartan Dining: All You Can Eat. Made to order stir fry at the BokChoy station! Fresh vegetables and 
+                    a protein of your choice cooked right in front of you, served over rice and orange sauce. One of the
+                    few decent dining hall dishes that I actually somewhat like.
+                </p>
+                <p class="description" id="text3">
+                    <b>Caf Treats - $1,302,185,024.00</b><br>
+                    Spartan Dining: All You Can Eat. Well Spartan Dining didn't post a caption on this one but it looks like
+                    an apple desert topped with vanilla ice cream. The deserts are cardboard but who cares about not being
+                    allowed to take food out. Always leave with some cookies or a whole pie tray if you're lucky.
+                <hr>
+
+                <h2>SALSARITA'S</h2>
+                <p class="small">Image credit: Madelyn Good</p><br>
+                <img class="default" onclick="show('text4')" src="assets/mrgood-quesadilla-crop.jpg" alt="Salsarita's Quesadilla">
+                <img class="default" onclick="show('text5')" src="assets/mrgood-bowl-crop.jpg" alt="Salsarita's Burrito Bowl">
+                <img class="default" onclick="show('text6')" src="assets/mrgood-nachos-crop.jpg" alt="Salsarita's Nachos">
+                
+                <p class="description" id="text4">
+                    <b>Quesadilla - $10.00+</b><br>
+                    A soft folded torilla lovingly filled with your favorite fillings and grilled to perfection. I copied
+                    that description from their website thank you. Their crusty dried out refried beans are so unappealing, 
+                    and no matter what fillings you choose their quesadillas are pretty disappointing.
+                </p>
+                <p class="description" id="text5">
+                    <b>Burrito Bowl - $10.00+</b><br>
+                    Ditch the tortilla, and fill up a bowl with your favorite burrito ingredients. Burrito bowls are either
+                    overflowing yummy goodness or pathetic nothing sadness. $10 for a half filled burrito bowl, no thank you.
+                    I'm telling you guys, Salsarita's is just not the sauce. I'm a hater.
+                </p>
+                <p class="description" id="text6">
+                    <b>Nachos - $10.00+</b><br>
+                    We smother our wildly addictive tortilla chips in creamy queso and pile it high with your choice of fresh
+                    toppings and meat. I agree with that description. They definitely load it up, they like piling
+                    everything in the center rather than spreading it around. These nachos are not finger food, use a fork.
+                </p>
+                <hr>
+
+                <h2>INSOMNIA COOKIES</h2>
+                <p class="small">Image credit: Madelyn Good</p><br>
+                <img class="default" onclick="show('text7')" src="assets/mrgood-cookies-crop.jpg" alt="Insomnia Cookies 6 Pack">
+                <img class="default" onclick="show('text8')" src="assets/mrgood-cookiewich-crop.jpg" alt="Insomnia Cookies Cookiewich">
+                <img class="default" onclick="show('text9')" src="assets/mrgood-brownies.jpg" alt="Insomnia Cookies Brownies">
+                <br>
+
+                <p class="description" id="text7">
+                    <b>6 Pack - $10.00</b><br>
+                    Sit back and relax with a 6-pack of your classic cookie faves. I love cookies hheh. This JavaScript section
+                    took me way too long to figure out wtf. Insomnia Cookies are really good if they are baked correctly and
+                    freshly served. Also serving vegan and gluten free cookies!
+                </p>
+                <p class="description" id="text8">
+                    <b>Deluxe Cookie'wich - $8.50</b><br>
+                    Three scoops of your favorite ice cream between two warm deluxe cookies. I call this one the ice cream burger.
+                    I've never tried this monster, but if your eyes are bigger than your stomach, try this and your life will
+                    never be the same. Muy delicioso, order once and probably never again. 
+                </p>
+                <p class="description" id="text9">
+                    <b>Brownie - $3.25</b><br>
+                    Choose between a brownie, blondie, or brookie. A brookie is half cookie, half brownie, a total snack. And my
+                    favorite. Feeling loaded? Try a loaded brownie, your favorite brownie topped with frosting and garnished 
+                    with your favorite toppings. If your brownie is underbaked or rock brick solid, demand a refund.
+            </div>
+
+            <div class="column right">
+                <h2>WHAT'S OPEN?</h2>
+                <hr class="yellow">
+                <p class="medium">Fountain View</p>
+                <p class="small">Moran Commons (8:00am-8:00pm)</p>
+                <hr>
+                <p class="medium">Salsarita's</p>
+                <p class="small">Elliott University Center (11:00am-4:00pm)</p>
+                <hr>
+                <p class="medium">Insomnia Cookies</p>
+                <p class="small">Tate Street (12:00pm-3:00am)</p><br><br>
+                <h2>MEAL PLANNER</h2>
+                <hr class="yellow">
+                <button>PLAN MY ORDER</button>
+            </div>
+        </section>
+    </main>
+
+    <!--- footer -->
+    <footer>
+        <p>CSC 300X HW 3 | Madelyn Good</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,182 @@
+/* --- overall styles --- */
+body {
+    font-family: 'Poppins';
+    margin: 0;
+    background-color: #e5e6e4;
+    color: #0f2044;
+    font-size: 14px;
+}
+
+footer {
+    background-color: #0f2044;
+    color: white;
+    text-align: center;
+    font-size: 10px;
+    padding: 2px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+h2 {
+    color: #0f2044;
+    margin: 0;
+}
+
+hr {
+    border: 1px solid rgba(211, 211, 211, 0.5);
+    margin-bottom: 10px;
+}
+
+hr.yellow {
+    border: 1px solid #ffb71b;
+    margin-bottom: 20px;
+}
+
+p {
+    line-height: 25px;
+}
+
+p.small {
+    font-size: 12px;
+    line-height: 21px;
+    margin: 0;
+}
+
+p.medium {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* --- splash image --- */
+#splash {
+    height: 315px;
+    background-position: center;
+    background-size: cover;
+    border-bottom: 5px solid #ffb71b;
+}
+
+/* --- nav bar --- */
+#logo {
+    width: 200px;
+}
+
+.header {
+    background-color: #0f2044;
+    color: white;
+    padding: 25px 40px 15px 40px;
+}
+
+ul {
+    display: block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.55);
+}
+
+li {
+    float: left;
+    margin: 0px 0px 5px 35px;
+    padding-top: 7px;
+}
+
+li a {
+    display: block;
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+}
+
+li a:hover {
+    border-bottom: 2px solid #ffb71b;
+}
+
+/* --- main section --- */
+.featured {
+    width: 100%;
+    height: 375px;
+    object-fit: cover;
+}
+
+/* main columns */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    padding-left: 35px;
+    background-color: white;
+}
+
+.left {
+    width: 60%;
+    padding: 25px;
+    margin: 35px 1px 35px 35px;
+}
+
+.right {
+    width: 25%;
+    padding: 25px;
+    margin: 35px 0px 35px 35px;
+}
+
+/* --- button --- */
+button {
+    background-color: #ffb71b;
+    color: #0f2044;
+    border: none;
+    padding: 12px 18px;
+
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0f2044;
+    color: #ffb71b;
+}
+
+/* --- image gallery (javascript) --- */
+.description {
+    display: none;
+    margin-bottom: 25px;
+}
+
+.description.selected {
+    display: block;
+}
+
+.default {
+    margin: 0px 15px 15px 0px;
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+}
+
+.expand {
+    margin: 0px 15px 15px 0px;
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+}
+
+/* --- table (meal plan) --- */
+table {
+    border-collapse: collapse;
+    width: 60%;
+}
+
+td, th {
+    text-align: left;
+    padding: 6px 6px 6px 0px;
+    margin: 0;
+}

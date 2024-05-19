@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--- Madelyn Good, HW4, javascript rock paper scissors game -->
+
+<head>
+    <meta charset="utf-8">
+    <title>mrgood | Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+    <script src='script.js' defer></script>
+    <link rel="icon" href="https://cdn-icons-png.freepik.com/256/231/231707.png">
+</head>
+
+<body>   
+    <section class="container">
+        <h3>Rock Paper Scissors</h3>
+
+        <!--- results -->
+        <div class="score">
+            <p>You: <span id="playerScore">0</span></p>
+            <p>Computer: <span id="computerScore">0</span></p>
+        </div>
+        <div class="computer">
+            <img src="assets/question.png" id="computer-result" onclick="toggleBorder('question')">
+        </div>
+        <div>
+            <h3 id="result">Choose your move:</h3>
+        </div>
+        
+        <!--- pick choice -->
+        <div>
+            <span id="player-choice"><img src="assets/rock.png" id="rock"></span>
+            <span class="player-choice"><img src="assets/paper.png" id="paper"></span>
+            <span class="player-choice"><img src="assets/scissors.png" id="scissors"></span>
+        </div>
+        <div>
+            <br>
+            <button onclick="window.location.reload();">Reset</button>
+        </div>
+    </section>
+
+    <footer>rip CSC 300X HW4 | Madelyn Good</footer>
+
+</body>
+
+</html>
