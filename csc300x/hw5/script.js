@@ -20,6 +20,8 @@ async function gitHubRepos() {
         //repoDetails(commitData);
         commitCount = commitData.length;
         */
+
+        // rip commit count idk
         
     }
     catch (err) {

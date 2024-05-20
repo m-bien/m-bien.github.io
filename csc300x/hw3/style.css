@@ -51,6 +51,22 @@ p.medium {
     margin: 0;
 }
 
+button {
+    background-color: #ffb71b;
+    color: #0f2044;
+    border: none;
+    padding: 9px 16px;
+
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0f2044;
+    color: #ffb71b;
+}
+
 /* --- splash image --- */
 #splash {
     height: 315px;
@@ -126,23 +142,6 @@ li a:hover {
     width: 25%;
     padding: 25px;
     margin: 35px 0px 35px 35px;
-}
-
-/* --- button --- */
-button {
-    background-color: #ffb71b;
-    color: #0f2044;
-    border: none;
-    padding: 12px 18px;
-
-    text-align: center;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #0f2044;
-    color: #ffb71b;
 }
 
 /* --- image gallery (javascript) --- */

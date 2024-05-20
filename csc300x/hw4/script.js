@@ -96,7 +96,7 @@ function shuffleImages() {
     imageToShuffle++;
 }
 
-// --- score ---
+// --- keep score (not working) ---
 let playerScore = 0;
 let computerScore = 0;
 
@@ -109,5 +109,7 @@ function keepScore(resultText) {
     document.getElementById("playerScore").textContent = playerScore;
     document.getElementById("computerScore").textContent = computerScore;
 }
+
+// rip it's not working! yay!
 
 
