@@ -32,6 +32,10 @@ footer {
 }
 
 /* --- navigation --- */
+nav {
+    margin: 36px 0px;
+}
+
 nav a {
     color: white;
     display: block;
