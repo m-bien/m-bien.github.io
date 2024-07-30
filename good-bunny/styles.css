@@ -1,0 +1,130 @@
+/* --- OVERALL --- */
+body {
+    font-family: 'Nunito';
+    color: #252323;
+    margin: 0;
+    text-align: center;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+.strip {
+    background-color: #D6E9F5;
+    padding: 10px;
+    margin: 0;
+    font-size: 12px;
+}
+
+button {
+    font-family: 'Nunito';
+    margin: 10px 0px;
+    background-color: #252323;
+    padding: 9px 24px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: gray;
+    cursor: pointer;
+}
+
+input {
+    margin-bottom: 40px;
+    width: 125px;
+    font-family: 'Nunito';
+    border: none;
+    border-bottom: 1px solid gray;
+    padding: 6px 12px;
+    transition: 0.4s ease-in-out;
+}
+
+input:focus {
+    width: 15%;
+    outline: none;
+    border-bottom: 1px solid black;
+}
+
+footer {
+    margin: 25px;
+    font-size: 12px;
+}
+
+/*--- LINKS ---*/
+a {
+    color: #252323;
+    text-decoration: none;
+}
+
+a:hover {
+    color: gray;
+}
+
+/*--- NAVIGATION ---*/
+nav {
+    border-bottom: 1px solid lightgray;
+    list-style: none;
+    margin: 20px auto 40px auto;
+    width: 50%;
+}
+
+nav ul {
+    list-style-type: none;
+    margin-bottom: 15px;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+}
+
+nav li a {
+    padding: 5px 15px;
+    display: inline-block;
+}
+
+/* --- GRID GALLERY --- */
+.grid {
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 70px 150px;  
+}
+
+.container {
+    position: relative;
+}
+
+.container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.container h3 {
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    top: 0;
+    left: 0;
+    color: white;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.container:hover h3 {
+    opacity: 1;
+}
