@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Admin - The Good Bunny Doll Shop</title>
+    <link rel="stylesheet" href="admin.css">
+    <link rel="icon" href="assets\favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e5b9e9445d.js"></script>
+</head>
+
+<body>
+    <p class="promo">Logged In: Admin</p>
+
+    <!--- NAVIGATION + ADMIN TITLE --->
+    <nav>
+        <ul>
+            <li><a href="product_edit.html">EDIT SHOP</a></li>
+            <li><a href="bulk_upload.html">BULK UPLOAD</a></li>
+            <li><a href="index.html">LOGOUT</a></li>
+        </ul>
+    </nav>
+
+    <h1>ADMIN</h1>
+
+    <!--- EDIT SHOP --->
+    <br>
+    <section>
+        <div class="row">
+            <div class="column">
+                <h2>Add Product</h2>
+                <form>
+                    <label for="category_id">Category ID:</label><br>
+                    <input type="text" id="category_id" name="category_id"><br>
+                    <label for="imageUrl">Image Path:</label><br>
+                    <input type="text" id="imageUrl" name="imageUrl" placeholder="gbds/pictures/new.png"><br>
+                    <label for="product_name">Name:</label><br>
+                    <input type="text" id="product_name" name="product_name"><br>
+                    <label for="price">Price:</label><br>
+                    <input type="text" id="price" name="price"><br>
+                    <label for="description">Description:</label><br>
+                    <textarea type="text" id="description" name="description"></textarea><br>
+                    <input type="submit" value="Add">
+                </form>
+            </div>
+            <div class="column" style="border-left: 1px solid lightgray; border-right: 1px solid lightgray">
+                <h2>Edit Product</h2>
+                <form>
+                    <label for="cars">Select Product:</label><br>
+                    <select name="cars" id="cars">
+                        <option value="one">Doll Stand</option>
+                        <option value="two">Netherlands Doll</option>
+                        <option value="three">Klara Doll</option>
+                        <option value="four">Playtime Bear</option>
+                    </select><br>
+                    <label for="product_id">Product ID:</label><br>
+                    <input type="text" id="product_id" name="product_id"><br>
+                    <label for="category_id">Category ID:</label><br>
+                    <input type="text" id="category_id" name="category_id"><br>
+                    <label for="imageUrl">New Image Path:</label><br>
+                    <input type="text" id="imageUrl" name="imageUrl" placeholder="gbds/pictures/new.png"><br>
+                    <label for="product_name">Edit Name:</label><br>
+                    <input type="text" id="product_name" name="product_name"><br>
+                    <label for="price">Edit Price:</label><br>
+                    <input type="text" id="price" name="price"><br>
+                    <label for="description">Edit Description:</label><br>
+                    <textarea type="text" id="description" name="description"></textarea><br>
+                    <input type="submit" value="Update">
+                </form>
+            </div>
+            <div class="column">
+                <h2>Remove Product</h2>
+                <form>
+                    <label for="cars">Select Product:</label><br>
+                    <select name="cars" id="cars">
+                        <option value="one">Doll Stand</option>
+                        <option value="two">Netherlands Doll</option>
+                        <option value="three">Klara Doll</option>
+                        <option value="four">Playtime Bear</option>
+                    </select><br>
+                    <label for="product_id">Product ID:</label><br>
+                    <input type="text" id="product_id" name="product_id"><br>
+                    <input type="submit" value="Remove">
+                </form>
+            </div>
+            
+        </div>
+    </section>
+
+    <!--- FOOTER --->
+    <nav>
+        <ul>
+            <li><a href="index.html">LOGOUT</a></li>
+        </ul>
+    </nav>
+</body>
+
+<footer>
+    <span style="float:left">&reg The Good Bunny Doll Shop</span>
+    <span style="float:right">Madelyn Good - Spring 2024 CSC 300X Project (Updated: July 2024)</span>
+    <br>
+</footer>
+</body>
+
+</html>
