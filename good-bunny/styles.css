@@ -34,6 +34,13 @@ button:hover {
     cursor: pointer;
 }
 
+select {
+    font-family: 'Nunito';
+    border: 1px solid gray;
+    padding: 5px;
+    margin-bottom: 14px;
+}
+
 input {
     margin-bottom: 40px;
     width: 125px;
