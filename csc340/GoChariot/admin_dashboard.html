@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--====== METADATA =====-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Home</title>
+    <meta content="Go Chariot" property="og:title" />
+    <meta content="A reimagined bus tracker for UNCG's Spartan Chariots" property="og:description" />
+    <meta content="https://gochariot.com" property="og:url" />
+    <meta content="#00008B" data-react-helmet="true" name="theme-color" />
+    <!--- links & styles -->
+    <link href='https://fonts.googleapis.com/css2?family=Poppins:wght@700' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css2?family=Poppins:wght@500' rel='stylesheet'>
+    <!---<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="css/index.css">
+    <script src='js/index.js' defer></script>
+    <link rel="icon" href="assets\favicon.png">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script type="text/javascript" src="js/login.js"></script>
+</head>
+
+<!--===== PAGE CONTENTS =====-->
+
+<body>
+    <!--- header -->
+    <header>
+        <a href="index.html"><img id="logo" src="assets/uncg_hrzntl-svg.png"></a>
+        <hr class="gray">
+        <h2><a class="nav" href="index.html">GO CHARIOT</a></h2>
+    </header>
+
+    <!--- splash photo + navbar -->
+    <nav>
+        <div id="splash" style="background-image: url('assets/uncg-fall-splash-overlay0.3.jpg');">
+            <ul>
+                <li><a href="admin_dashboard.html">HOME</a></li>
+                <li><a href="manage_users.html">MANAGE USERS</a></li>
+                <li><a href="edit_routes.html">MANAGE ROUTES</a></li>
+                <li><a href="admin_reviews.html">MANAGE REVIEWS</a></li>
+                <li><a href="admin_alerts.html">SEND ALERT</a></li>
+                <li class="li-right"><a href="index.html">SIGN OUT</a></li>
+            </ul>
+            <h1><br><br><br>ADMIN HOME</h1>
+        </div>
+    </nav>
+
+    <!--- main body -->
+    <main>
+        <section class="row">
+            <div class="column left">
+                <h2>WELCOME, ADMIN</h2>
+                <hr class="yellow">
+                <p>This is your dashboard for managing Go Chariot's operations, including routes, reviews, and user accounts.</p>
+        </section>
+    </main>
+
+    <!--- footer -->
+    <footer>
+        <p>&copy GoChariot - Logan Phillips, Hasan Hashim, Madelyn Good</p>
+    </footer>
+
+</body>
+
+</html>

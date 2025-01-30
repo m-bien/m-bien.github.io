@@ -1,0 +1,109 @@
+/* --- overall --- */
+body {
+    font-family: 'Verdana';
+    margin: 0;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+footer {
+    bottom: 0;
+    margin: 0;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    font-size: 10px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+/* logo */
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+}
+
+.splash {
+    height: 305px;
+    background-position: center;
+    background-size: cover;
+}
+
+/* --- navigation bar --- */
+ul {
+    display: block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+}
+
+li {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+li a {
+    display: block;
+    padding: 12px 18px 6px 18px;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+}
+
+li a:hover {
+    border-bottom: 2px solid #282828;
+}
+
+/* --- sections --- */
+.featured-img {
+    width: 100%;
+    height: 275px;
+    object-fit: cover;
+}
+
+/* columns, reference: w3schools */
+* {
+    box-sizing: border-box;
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+.left {
+    padding: 50px 50px 50px 150px;
+}
+
+.right {
+    padding: 50px 150px 50px 50px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* button */
+button {
+    background-color: wheat;
+    padding: 10px 20px;
+    margin-top: 8px;
+    text-align: center;
+    border: 1px solid transparent;
+    font-family: 'Verdana';
+}
+
+button:hover{
+    background-color: white;
+    border: 1px solid black;
+    cursor: pointer;
+}

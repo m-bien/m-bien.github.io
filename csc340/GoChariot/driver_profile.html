@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Driver Profile | Go Chariot</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link href='https://fonts.googleapis.com/css2?family=Poppins:wght@700' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css2?family=Poppins:wght@500' rel='stylesheet'>
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="icon" href="assets/favicon.png">
+  <style>
+    .profile-container {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 800px;
+    }
+
+    .profile-section {
+      margin-bottom: 20px;
+    }
+
+    .profile-section:last-child {
+      margin-bottom: 0;
+    }
+
+    .section-title {
+      font-size: 24px;
+      font-weight: 700;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 10px;
+      margin-bottom: 15px;
+    }
+
+    .profile-info, .work-history-item, .average-rating {
+      margin-bottom: 10px;
+    }
+
+    .profile-info-title, .work-history-title {
+      font-weight: 500;
+    }
+
+    .average-rating {
+      font-size: 18px;
+      font-weight: 500;
+    }
+  </style>
+</head>
+
+<body>
+  <!--- header -->
+  <header>
+    <hr class="gray">
+    <h2><a href="index.html">GO CHARIOT</a></h2>
+  </header>
+
+  <!--- splash photo + navbar -->
+  <nav>
+    <div id="splash" style="background-image: url('assets/chariot-students-splash-overlay0.3.jpg');">
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="routes.html">BUS ROUTES</a></li>
+        <li><a href="reviews.html">REVIEWS</a></li>
+        <div class="li-right">
+          <li class=""><a href="driver_profile.html">PROFILE</a></li>
+          <li class=".logged-out"><a href="index.html">SIGN OUT</a></li>
+        </div>
+      </ul>
+      <h1><br><br><br>PROFILE</h1>
+    </div>
+  </nav>
+
+  <!--- main body -->
+  <main>
+    <section class="container">
+      <div class="profile-container">
+        <!-- Driver Information -->
+        <div class="profile-section">
+          <div class="section-title">Your Information</div>
+          <div class="profile-info"><span class="profile-info-title">Name:</span> Jane Doe</div>
+          <div class="profile-info"><span class="profile-info-title">Email:</span> janedoe@example.com</div>
+        </div>
+
+        <!-- Work History -->
+        <div class="profile-section">
+          <div class="section-title">Work History</div>
+          <div class="work-history-item"><span class="work-history-title">Date:</span> 2023-08-15, <span class="work-history-hours">Hours: 8</span></div>
+          <div class="work-history-item"><span class="work-history-title">Date:</span> 2023-07-22, <span class="work-history-hours">Hours: 6</span></div>
+          <!-- Add more work history items as needed -->
+        </div>
+
+        <!-- Average Rating -->
+        <div class="profile-section">
+          <div class="section-title">Average Rating</div>
+          <div class="average-rating">4.8 / 5</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Go Chariot. All rights reserved.</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

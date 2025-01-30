@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--====== METADATA =====-->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student - Bus Tracker</title>
+  <meta content="Go Chariot" property="og:title" />
+  <meta content="A reimagined bus tracker for UNCG's Spartan Chariots" property="og:description" />
+  <meta content="https://gochariot.com" property="og:url" />
+  <meta content="#00008B" data-react-helmet="true" name="theme-color" />
+  <!--- links & styles -->
+  <link href='https://fonts.googleapis.com/css2?family=Poppins:wght@700' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css2?family=Poppins:wght@500' rel='stylesheet'>
+  <!---<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">-->
+  <link rel="stylesheet" href="css/index.css">
+  <script src='js/index.js' defer></script>
+  <link rel="icon" href="assets\favicon.png">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script type="text/javascript" src="js/login.js"></script>
+</head>
+
+<!--===== PAGE CONTENTS =====-->
+
+<body>
+  <!--- header -->
+  <header>
+    <a href="index.html"><img id="logo" src="assets/uncg_hrzntl-svg.png"></a>
+    <hr class="gray">
+    <h2><a class="nav" href="index.html">GO CHARIOT</a></h2>
+  </header>
+
+  <!--- splash photo + navbar -->
+  <nav>
+    <div id="splash" style="background-image: url('assets/campus-splash-overlay0.3.jpg');">
+      <ul>
+        <li><a href="student_dashboard.html">HOME</a></li>
+        <li><a href="routes.html">BUS TRACKER</a></li>
+        <li><a href="student_reviews.html">RATE MY CHARIOT</a></li>
+        <li class="li-right"><a href="index.html">SIGN OUT</a></li>
+      </ul>
+      <h1><br><br><br>SPARTAN CHARIOT</h1>
+    </div>
+  </nav>
+
+  <!--- main body -->
+  <main>
+    <section class="row">
+      <!--- RIGHT column -->
+      <div class="column left">
+        <!--- map -->
+        <h2>LIVE MAP</h2>
+        <hr class="yellow">
+        <!-- Embed or link to the live map here -->
+        <div id="map"></div>
+      </div>
+
+      <!--- LEFT column -->
+      <div class="column right">
+        <!--- ride requests -->
+        <div class="right-block">
+          <h2>BUS SCHEDULE</h2>
+          <hr class="yellow">
+          <p><b>Monday-Friday</b>: 7:30 AM-12:30 AM</p>
+          <p><b>Saturday</b>: 5:30 PM-12:30 AM</p>
+          <p><b>Sunday</b>: 3:30 PM-12:30 AM</p>
+        </div>
+        <br>
+        <div class="right-block">
+          <h2>BUS STOPS</h2>
+          <hr class="yellow">
+          <p><b>1. College Ave</b><br>Next Bus: 5 min away</p>
+          <p><b>2. Walker Circle</b><br>Next Bus: 10 min away</p>
+          <p><b>3. Spartan Village</b><br>Next Bus: 13 min away</p>
+          <!--- Add more stops -->
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <!--- footer -->
+  <footer>
+    <p>&copy GoChariot - Logan Phillips, Hasan Hashim, Madelyn Good</p>
+  </footer>
+
+</body>
+
+</html>

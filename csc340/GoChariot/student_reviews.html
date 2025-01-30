@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--====== METADATA =====-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student - Reviews</title>
+    <meta content="Go Chariot" property="og:title" />
+    <meta content="A reimagined bus tracker for UNCG's Spartan Chariots" property="og:description" />
+    <meta content="https://gochariot.com" property="og:url" />
+    <meta content="#00008B" data-react-helmet="true" name="theme-color" />
+    <!--- links & styles -->
+    <link href='https://fonts.googleapis.com/css2?family=Poppins:wght@700' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css2?family=Poppins:wght@500' rel='stylesheet'>
+    <!---<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="css/index.css">
+    <script src='js/index.js' defer></script>
+    <link rel="icon" href="assets\favicon.png">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script type="text/javascript" src="js/login.js"></script>
+</head>
+
+<!--===== PAGE CONTENTS =====-->
+
+<body>
+    <!--- header -->
+    <header>
+        <a href="index.html"><img id="logo" src="assets/uncg_hrzntl-svg.png"></a>
+        <hr class="gray">
+        <h2><a class="nav" href="index.html">GO CHARIOT</a></h2>
+    </header>
+
+      <!--- splash photo + navbar -->
+  <nav>
+    <div id="splash" style="background-image: url('assets/PIC30376-splash-edit-overlay0.3.jpg');">
+      <ul>
+        <li><a href="student_dashboard.html">HOME</a></li>
+        <li><a href="routes.html">BUS TRACKER</a></li>
+        <li><a href="student_reviews.html">RATE MY CHARIOT</a></li>
+        <li class="li-right"><a href="index.html">SIGN OUT</a></li>
+      </ul>
+      <h1><br><br><br>CHARIOT REVIEWS</h1>
+    </div>
+  </nav>
+
+    <!--- main body -->
+    <main>
+        <section class="row">
+          <div class="column left">
+            <h2>ADD REVIEW</h2>
+            <hr class="yellow">
+            <!--- add review -->
+            <form>
+                <div>
+                    <label for="alertTarget">Driver: </label>
+                    <select id="alertTarget">
+                        <option>John Doe</option>
+                        <option>Jane Smith</option>
+                        <option>I Don't Know</option>
+                    </select>
+                </div>
+                <div>
+                    <textarea class="form-control" id="alertMessage" rows="3" placeholder="Enter review feedback" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+                <br>
+                <br>
+                <br>
+            </form>
+            
+            <!--- read reviews -->
+            <h2>RECENT REVIEWS</h2>
+            <hr class="yellow">
+            <div class="profile-container">
+              <h3 class="driver-name">Driver John Doe - Average Rating: ★★★★☆</h3><br>
+              <div class="review">
+                <div class="review-details">
+                  <span class="stars">★★★★☆</span> - Anonymous
+                </div>
+                <div class="review-text">
+                  John was very polite and drove safely. Great experience!
+                </div>
+              </div>
+              <br>
+              <div class="review">
+                <div class="review-details">
+                  <span class="stars">★★★★★</span> - Anonymous
+                </div>
+                <div class="review-text">
+                  Excellent service, the ride was smooth and timely.
+                </div>
+              </div>
+            </div>
+      
+            <div class="profile-container">
+              <h3 class="driver-name">Driver Jane Smith - Average Rating: ★★★☆☆</h3><br>
+              <div class="review">
+                <div class="review-details">
+                  <span class="stars">★★★☆☆</span> - Anonymous
+                </div>
+                <div class="review-text">
+                  Decent experience, but the ride was a bit bumpy.
+                </div>
+              </div>
+              <br>
+              <div class="review">
+                <div class="review-details">
+                  <span class="stars">★★★☆☆</span> - Anonymous
+                </div>
+                <div class="review-text">
+                  Got us to our destination on time, but could be friendlier.
+                </div>
+              </div>
+            </div>
+            <!-- Add more driver reviews as needed -->
+    
+           <br>
+        </section>
+      </main>
+
+    <!--- footer -->
+    <footer>
+        <p>&copy GoChariot - Logan Phillips, Hasan Hashim, Madelyn Good</p>
+    </footer>
+
+</body>
+
+</html>

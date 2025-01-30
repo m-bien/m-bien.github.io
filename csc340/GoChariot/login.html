@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--====== METADATA =====-->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Go Chariot | Login</title>
+  <meta content="Go Chariot" property="og:title" />
+  <meta content="A reimagined bus tracker for UNCG's Spartan Chariots" property="og:description" />
+  <meta content="https://gochariot.com" property="og:url" />
+  <meta content="#00008B" data-react-helmet="true" name="theme-color" />
+  <!--- links & styles -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link href='https://fonts.googleapis.com/css2?family=Poppins:wght@700' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css2?family=Poppins:wght@500' rel='stylesheet'>
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="icon" href="assets\favicon.png">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/login.js"></script>
+</head>
+
+<!--===== PAGE CONTENTS =====-->
+
+<body>
+    <!--- header -->
+    <header>
+      <hr class="gray">
+      <h2><a href="index.html">GO CHARIOT</a></h2>
+    </header>
+  
+    <!--- splash photo + navbar -->
+    <nav>
+      <div id="splash" style="background-image: url('assets/uncg-spring-splash-overlay0.3.jpg');">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="routes.html">BUS ROUTES</a></li>
+          <li><a href="reviews.html">REVIEWS</a></li>
+          <div class="li-right">
+            <li><a href="login.html">LOGIN</a></li>
+          </div>
+        </ul>
+        <h1><br><br><br>MY ACCOUNT</h1>
+      </div>
+    </nav>
+  
+    <!--- main body -->
+    <main>
+      <section class="container">
+        <div class="login-container">
+          <h2 class="text-center">Login to Your Account</h2>
+          <hr class="yellow">
+          <div class="login-form">
+            <input type="email" class="form-control" placeholder="Email" id="email" required>
+            <input type="password" class="form-control" placeholder="Password" required>
+            <button type="submit" onclick="login()" class="btn btn-block login-button">Login</button>
+          </div>
+          <div class="text-center mt-3">
+            <p>Don't have an account? <a href="signup.html" style="color:#0f2044">Sign up</a></p>
+          </div>
+        </div>
+      </section>
+    </main>
+  <!--- footer -->
+  <footer>
+    <p>&copy GoChariot - Logan Phillips, Hasan Hashim, Madelyn Good</p>
+  </footer>
+
+</body>
+
+</html>
